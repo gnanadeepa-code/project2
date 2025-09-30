@@ -1,59 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sample HTML Page</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: #f4f4f4;
-        margin: 0;
-        padding: 0;
-      }
-      .container {
-        max-width: 600px;
-        margin: 40px auto;
-        background: #fff;
-        padding: 24px;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      }
-      h1 {
-        color: #333;
-      }
-      p {
-        color: #555;
-      }
-      a {
-        color: #0078d7;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Welcome to Your Sample HTML Page</h1>
-      <p>
-        This is a simple, modern HTML page example. You can use this as a
-        starting point for your web projects.
-      </p>
-      <ul>
-        <li>Clean and responsive layout</li>
-        <li>Easy to customize</li>
-        <li>Ready for your content</li>
-      </ul>
-      <p>
-        Learn more about
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-          target="_blank"
-          >HTML</a
-        >.
-      </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Photo App</title>
+</head>
+<body>
+  <h2>CatPhotoApp</h2>
+  <main>
+    <h3>Cat photos</h3>
+    <!--TODO: Add link-->
+    <a>Click here to add more <a href="#" target="_blank"></a>cat photos.</a>
+    <img src="https://fcc.im/fcc-relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+    <div class="lists">
+      <img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+    <h3> Cat Lists</h3>    
+    <p>Things cats <em>love:</em></p>
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats <strong>hate:</strong> </p>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>   
+    </ol>
     </div>
-  </body>
-</html>
+    <form action="/submit-cat-photo">
+      <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+      <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label>
+      <br>
+      <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
+      <br>
+      <label for="lazy"><input id="lazy" type="checkbox" name="personality"> Lazy</label>
+      <br>
+      <label for="energetic"><input id="energetic" type="checkbox" name="personality"> Energetic</label>
+      <br>
+      <input type="text" placeholder="cat photo URL" required>
+      <br>
+     
+      <label><input type="checkbox" name="indoor" checked> Indoor</label>
+      <label><input type="checkbox" name="outdoor"> Outdoor</label>
+      <label><input type="checkbox" name="litterbox"> Litter Box</label>
+      <label><input type="checkbox" name="fed"> Fed</label>
+      <label><input type="checkbox" name="naptime" checked> Naptime</label>
+      <br>
+      <button type="submit">Submit</button>
+  </main>
+  <footer>
+    <p><small>@ Copyright Cat Photo App</small></p>
+</body>
+</html> 
